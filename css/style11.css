@@ -1,0 +1,154 @@
+body{
+    margin: 0 auto;
+    color: grey;
+    background-color: #fff;
+    font: 16px/20px serif
+
+}
+.form{
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+}
+
+.row{
+    padding: 0 0 10px;
+    position: relative;
+}
+.radio-box{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.radio-label{
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.radio-label::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    left: 3px;
+    top: 3px;
+    border-radius: 20px;
+}
+.radio-label::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgb(1, 5, 0);
+    background-color: rgb(3, 10, 0);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.radio-box:checked + .radio-label::after{
+    display: block;
+    left: 15px;
+}
+.radio-box:checked + .radio-label::before{
+    display: block;
+    background-color: greenyellow;
+}
+/* ________________________________________ */
+.jcf-select{
+    position: relative;
+    display: flex;
+    width: 130px;
+    border: 1px solid black;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 3px;
+    padding: 1px 10px ;
+}
+.jcf-select-text{
+    flex-grow: 1;
+
+}
+.jcf-select-opener{
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(-45deg);
+    margin: 3px 0 0;
+}
+.jcf-select-drop{
+    border: 1px solid black;
+}
+.jcf-select-drop ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.jcf-option{
+    display: block;
+    padding: 5px;
+    color: greenyellow;
+    background-color: grey;
+}
+.jcf-selected{
+    background-color: blue;
+}
+.jcf-hover{
+    background-color: blueviolet;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+/* ____________________________________ */
+.label-checkbox{
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+}
+.row:last-child{
+    margin-top: 40px;
+}
+.checkbox{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.label-checkbox{
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.label-checkbox::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    left: 3px;
+    top: 3px;
+    border-radius: 3px;
+}
+.label-checkbox::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 18px;
+    height: 5px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+    display: none;
+}
+.checkbox:checked + .label-checkbox::after{
+    display: block;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid blue;
+    
+}

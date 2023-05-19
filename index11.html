@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style11.css">
+    <title>Custom forms</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./js/jcf.js"></script>
+    <script src="./js/jcf.select.js"></script>
+    <script src="./js/jquery.main.js"></script>
+</head>
+<body>
+    <form action="" class="form">
+        <div class="row">
+            <input class="radio-box" checked type="radio" name="sex" id="male">
+            <label class="radio-label" for="male">Male</label>
+        </div>
+        <div class="row">
+            <input class="radio-box" type="radio" name="sex" id="female">
+            <label class="radio-label" for="female">Female</label>
+        </div>
+        <div class="row">
+            <label class="label-text" for="city">Choose your city</label>
+            <select name="" id="city" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                <option value="">Kyiv</option>
+                <option value="">Dnipro</option>
+                <option value="">Kharkiv</option>
+                <option value="">Odessa</option>
+            </select>
+        </div>
+        <div class="row">
+            <input class="checkbox" type="checkbox" id="yes/no">
+            <label class="label-checkbox" for="yes/no">Yes, I agree</label>
+        </div>
+    </form>
+    
+    
+</body>
+</html>
